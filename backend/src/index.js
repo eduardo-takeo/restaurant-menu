@@ -1,7 +1,9 @@
-import express from "express";
-import { mongoose } from "mongoose";
+const express = require("express");
+const mongoose = require("mongoose");
 
-import dishRoutes from "./routes/DishRoutes";
+const dishesRouter = require("./routes/DishRoutes");
+
+require("dotenv").config();
 
 const app = express();
 
@@ -12,8 +14,8 @@ app.listen(3001, () => {
   console.log("Server is running on port 3001");
 });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/CRUD");
+mongoose.connect(process.env.MONGO_URL);
 
-app.use("/api/dishes", dishRoutes);
+app.use("/api/dishes", dishesRouter);
 
-export default app;
+module.exports = app;

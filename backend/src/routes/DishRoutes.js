@@ -1,16 +1,16 @@
-import express from "express";
+const express = require("express");
 
-import {
+const {
   getAllDishes,
   getDishById,
   createDish,
   updateDish,
   deleteDish,
-} from "../controllers/DishController";
+} = require("../controllers/DishController");
 
 const router = express.Router();
 
 router.route("/").get(getAllDishes).post(createDish);
 router.route("/:id").get(getDishById).put(updateDish).delete(deleteDish);
 
-export default router;
+module.exports = router;
