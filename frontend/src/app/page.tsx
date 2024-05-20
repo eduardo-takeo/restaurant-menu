@@ -8,16 +8,21 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="w-100">
+      <div className="w-100 max-w-800 m-auto">
         <Card
           title="Pasta"
           description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
           price={20.99}
           imageUrl={pastaImage}
         />
+        <Card
+          title="Pasta"
+          description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
+          price={20.99}
+          imageUrl={pastaImage}
+        />
+        <RestaurantDetails />
       </div>
-
-      <RestaurantDetails />
     </main>
   );
 }

@@ -13,6 +13,7 @@ export interface IRestaurantDetailsProps {
   storeUrl?: string;
 }
 
+//TODO: make RestaurantDetails component dynamic
 export const RestaurantDetails = ({
   isOpen,
   category,
@@ -32,17 +33,17 @@ export const RestaurantDetails = ({
           <PiForkKnifeFill />
           <p className="text-sm font-light text-gray-700">Meals</p>
         </span>
-        <span className="flex gap-1 items-center mb-2">
+        <span className="flex gap-2 items-center mb-2">
           <FaClock />
           <p className="text-sm font-light text-gray-700">
             Open from 12:00 to 23:00
           </p>
         </span>
-        <span className="flex gap-1 items-center mb-2">
+        <span className="flex gap-2 items-center mb-2">
           <FaPhone />
           <p className="text-sm font-light text-gray-700">+55 (11) 1234-5678</p>
         </span>
-        <span className="flex gap-1 items-center mb-2">
+        <span className="flex gap-2 items-center mb-2">
           <FaLocationDot />
           <p className="text-sm font-light text-gray-700">
             Ocean Avenue, 1234 - Miami/FL
