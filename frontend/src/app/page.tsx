@@ -2,6 +2,7 @@ import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 
 import pastaImage from "../../public/assets/pasta.jpeg";
+import { RestaurantDetails } from "./components/RestaurantDetails";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
           imageUrl={pastaImage}
         />
       </div>
+
+      <RestaurantDetails />
     </main>
   );
 }
