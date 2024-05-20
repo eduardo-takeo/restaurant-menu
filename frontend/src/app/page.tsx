@@ -5,7 +5,7 @@ import pastaImage from "../../public/assets/pasta.jpeg";
 export default function Home() {
   return (
     <main>
-      <div className="w-96">
+      <div className="w-100">
         <Card
           title="Pasta"
           description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
