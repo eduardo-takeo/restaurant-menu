@@ -1,10 +1,12 @@
 import { Card } from "./components/Card";
+import { Header } from "./components/Header";
 
 import pastaImage from "../../public/assets/pasta.jpeg";
 
 export default function Home() {
   return (
     <main>
+      <Header />
       <div className="w-100">
         <Card
           title="Pasta"
