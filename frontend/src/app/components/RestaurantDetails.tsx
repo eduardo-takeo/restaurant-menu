@@ -25,16 +25,16 @@ export const RestaurantDetails = ({
   storeUrl,
 }: IRestaurantDetailsProps) => {
   return (
-    <div className="bg-white w-100 p-4">
+    <div className="bg-white w-100 px-4 py-6 relative">
       <div
         className={`${
           isOpen ? "bg-emerald-400" : "bg-red-500"
-        } text-white w-14 px-2 text-center text-sm rounded-full float-end`}
+        } text-white w-14 px-2 text-center text-sm rounded-full absolute top-6 right-6`}
       >
         {isOpen ? "Open" : "Closed"}
       </div>
 
-      <div className="my-8">
+      <div className="mb-8">
         {category && (
           <span className="flex gap-2 items-center mb-2">
             <PiForkKnifeFill />
@@ -69,7 +69,7 @@ export const RestaurantDetails = ({
       </div>
 
       {storeUrl && (
-        <span className="flex gap-2 items-center mb-2">
+        <span className="flex gap-2 items-center">
           <a
             href={storeUrl}
             className="text-sm font-light text-gray-700 underline"
