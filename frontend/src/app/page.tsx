@@ -21,7 +21,15 @@ export default function Home() {
           price={20.99}
           imageUrl={pastaImage}
         />
-        <RestaurantDetails />
+        <RestaurantDetails
+          isOpen
+          category="Italian"
+          openingHour={420}
+          closingHour={1080}
+          phoneNumber={551112345678}
+          address="Ocean Avenue, 1234 - Miami/FL"
+          storeUrl="https://google.com"
+        />
       </div>
     </main>
   );
