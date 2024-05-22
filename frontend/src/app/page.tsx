@@ -1,5 +1,6 @@
 import { Card } from "./components/Card";
 import { Header } from "./components/Header";
+import { Tag } from "./components/Tag";
 import { RestaurantDetails } from "./components/RestaurantDetails";
 
 import bannerImage from "../../public/assets/banner.png";
@@ -28,6 +29,13 @@ export default function Home() {
           address="Ocean Avenue, 1234 - Miami/FL"
           storeUrl="https://google.com"
         />
+
+        <div className="bg-gray-100 px-4 py-8 flex gap-3">
+          <Tag text="Main entries" isActive />
+          <Tag text="Main course" />
+          <Tag text="Dessert" />
+        </div>
+
         <Card
           title="Pasta"
           description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
