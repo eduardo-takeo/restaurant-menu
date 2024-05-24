@@ -7,6 +7,7 @@ import bannerImage from "../../public/assets/banner.png";
 import pastaImage from "../../public/assets/pasta.jpeg";
 import Image from "next/image";
 import { CategoryTitle } from "./components/CategoryTitle";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -64,6 +65,8 @@ export default function Home() {
           imageUrl={pastaImage}
         />
       </div>
+
+      <Footer />
     </main>
   );
 }
