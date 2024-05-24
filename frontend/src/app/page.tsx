@@ -6,6 +6,7 @@ import { RestaurantDetails } from "./components/RestaurantDetails";
 import bannerImage from "../../public/assets/banner.png";
 import pastaImage from "../../public/assets/pasta.jpeg";
 import Image from "next/image";
+import { CategoryTitle } from "./components/CategoryTitle";
 
 export default function Home() {
   return (
@@ -36,6 +37,20 @@ export default function Home() {
           <Tag text="Dessert" />
         </div>
 
+        <CategoryTitle title="Main entries" />
+        <Card
+          title="Pasta"
+          description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
+          price={20.99}
+          imageUrl={pastaImage}
+        />
+        <Card
+          title="Pasta"
+          description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
+          price={20.99}
+          imageUrl={pastaImage}
+        />
+        <CategoryTitle title="Main course" />
         <Card
           title="Pasta"
           description="Delicious pasta with marinara sauce, basil, and parmesan cheese."
